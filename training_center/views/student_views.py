@@ -58,7 +58,7 @@ class UserStudentCreateApi(APIView):
         return Response(serializer.errors)
 
     def get(self, request):
-        student = Student.objects.all().order_by('-id')
+        student = Student.objects.all()
         serializer = StudentSerializer(student, many=True)
         return Response(data=serializer.data)
 

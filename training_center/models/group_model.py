@@ -31,8 +31,6 @@ class GroupStudent(BaseModel):
     course=models.ForeignKey(Course, on_delete=models.CASCADE, related_name="groupcourse")
     teacher=models.ManyToManyField(Teacher, related_name="get_teacher")
     table=models.ForeignKey(Table, on_delete=models.CASCADE, related_name="group_tables")
-    start_date=models.DateField()
-    end_date=models.DateField()
     descriptions = models.CharField(max_length=500, blank=True, null=True)
 
     def __str__(self):

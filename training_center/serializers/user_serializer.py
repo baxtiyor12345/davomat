@@ -7,7 +7,4 @@
 # uyga vazifalar:
 # teacher faqat uzining guruhlari ko`rinishi kerak:
 # teacher uzining bitta guruhining studentlar ro`yxatini ko`ra olishi kerak:
-#
-
-
 

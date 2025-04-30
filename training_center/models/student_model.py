@@ -10,7 +10,7 @@ class Group(BaseModel):
 
 class Student(BaseModel):
     user=models.OneToOneField(User, on_delete=models.CASCADE)
-    group=models.ManyToManyField('Group', related_name="student")
+    group=models.ManyToManyField(Group, related_name="student")
     course=models.ManyToManyField(Course, related_name="student")
     is_line=models.BooleanField(default=False)
     descriptions=models.CharField(max_length=500, blank=True, null=True)

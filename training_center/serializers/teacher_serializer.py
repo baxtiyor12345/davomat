@@ -4,16 +4,6 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from .auth_serializer import *
 
-class CourseSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=Course
-        fields="__all__"
-
-
-class DepartmentsSerializer(serializers.ModelSerializer):
-    class Meta:
-        model=Departments
-        fields=["title", "is_active", "descriptions"]
 
 # class UserCreateSerializer(serializers.ModelSerializer):
 #     class Meta:

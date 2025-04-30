@@ -4,3 +4,4 @@ from .student_views import *
 from .teacher_views import *
 from .departments_views import *
 from .davomat_views import *
+from .payme_views import *
